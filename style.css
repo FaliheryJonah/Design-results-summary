@@ -58,12 +58,10 @@ body {
 .left {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
-  gap: 10px;
 
   box-sizing: border-box;
-  padding: 1.8rem;
 
   color: white;
   width: 368px;
@@ -74,11 +72,19 @@ body {
   background: linear-gradient(180deg, #7755ff 0%, #2f2ce9 100%);
 }
 
+.left-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 428px;
+}
+
 h3 {
   margin: 0;
   font-size: 24px;
-  margin-top: 20px;
-  margin-bottom: 24px;
+  /* margin-top: 38px;
+  margin-bottom: 35px; */
   color: rgba(255, 255, 255, 0.7);
   font-weight: 500;
 }
@@ -126,7 +132,7 @@ h3 {
   width: 368px;
   height: 512px;
   box-sizing: border-box;
-  padding: 40px;
+  padding: 38px 40px 46px;
 }
 
 .right h2 {
@@ -144,9 +150,11 @@ h3 {
 .right .detail ul li {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
   align-items: center;
-  border-radius: 10px;
+
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 12px;
   background-color: #f3f3fd;
 
   margin: 16px 0;
@@ -166,9 +174,10 @@ h3 {
 
 .right button {
   width: 100%;
+  height: 56px;
   font-size: 18px;
   font-weight: 600;
-  padding: 15px;
+  padding: 17px;
   border-radius: 30px;
   background: linear-gradient(180deg, #7755ff 0%, #2f2ce9 100%);
   color: white;
