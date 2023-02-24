@@ -210,10 +210,9 @@ h3 {
 @media screen and (max-width: 800px) {
   .container {
     width: 375px;
+    height: 809px;
     display: flex;
     border-radius: 0 0 32px 32px;
-    justify-content: space-around;
-    gap: 20px;
     align-items: center;
     flex-direction: column;
   }
@@ -221,6 +220,13 @@ h3 {
   .left {
     width: 375px;
     height: 356px;
+    box-sizing: border-box;
+    border-radius: 0 0 32px 32px;
+  }
+
+  .left-container {
+    width: 260px;
+    height: 292px;
   }
 
   .left h3 {
@@ -248,23 +254,39 @@ h3 {
 
   .info p {
     font-size: 16px;
+    margin-bottom: 40px;
   }
 
   .right {
     width: 335px;
     height: 399px;
-    padding: 0rem 0.5rem 1rem;
+    padding: 0rem 0.5rem 30px;
+    box-sizing: border-box;
   }
 
-  .right .detail ul li .detail-title img {
-    width: 20px;
+  .right ul {
+    margin: 0;
+  }
+
+  .right .detail {
+    height: 272px;
   }
 
   .right h2 {
     font-size: 18px;
+    line-height: 18px;
+    margin: 24px 0;
+  }
+
+  .right .detail ul {
+    width: 315px;
   }
 
   .info p {
     margin: 0rem 0.5rem;
+  }
+
+  .right button {
+    margin-top: 24px;
   }
 }
